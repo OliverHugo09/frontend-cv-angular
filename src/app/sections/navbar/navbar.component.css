@@ -1,0 +1,7 @@
+.nav-color a{
+    color: white !important;
+}
+
+.nav-color a:hover{
+    color: black !important;
+}
