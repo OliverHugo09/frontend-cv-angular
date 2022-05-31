@@ -1,7 +1,14 @@
-.nav-color a{
-    color: white !important;
-}
-
 .nav-color a:hover{
     color: black !important;
 }
+
+ul li a {
+    font-family: var(--unnamed-font-family-roboto) !important;
+    font-style: var(--unnamed-font-style-italic) !important;
+    font-weight: var(--unnamed-font-weight-bold) !important;
+    font-size: var(--unnamed-font-size-20) !important;
+    line-height: var(--unnamed-line-spacing-24) !important;
+    letter-spacing: var(--unnamed-character-spacing-0) !important;
+    color: var(--blanco) !important;
+    text-transform: none !important;
+    }
