@@ -12,3 +12,7 @@ ul li a {
     color: var(--blanco) !important;
     text-transform: none !important;
     }
+
+.uk-navbar-container{
+    background-color: var(--footer) !important;
+}
