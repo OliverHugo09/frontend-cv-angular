@@ -16,3 +16,9 @@ ul li a {
 .uk-navbar-container{
     background-color: var(--footer) !important;
 }
+
+@media(max-width:615px){
+    .navMobil{
+        background-color: aqua !important;
+    }
+}
