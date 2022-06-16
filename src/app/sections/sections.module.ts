@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/footer.component';
-import { FreetimeComponent } from './freetime/freetime.component';
-import { SkillComponent } from './skill/skill.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { FormComponent } from './form/form.component';
+import { FooterComponent } from './home/footer/footer.component';
+import { FreetimeComponent } from './home/freetime/freetime.component';
+import { SkillComponent } from './home/skill/skill.component';
+import { ExperienceComponent } from './home/experience/experience.component';
+import { NavbarComponent } from './home/navbar/navbar.component';
+import { AboutmeComponent } from './home/aboutme/aboutme.component';
+import { FormComponent } from './home/form/form.component';
+import { NavbarAdminComponent } from './admin/navbar-admin/navbar-admin.component';
+import { RouterModule } from '@angular/router';
+import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
+
 
 @NgModule({
   declarations: [
@@ -16,10 +20,13 @@ import { FormComponent } from './form/form.component';
     ExperienceComponent,
     NavbarComponent,
     AboutmeComponent,
-    FormComponent
+    FormComponent,
+    NavbarAdminComponent,
+    PanelAdminComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     FooterComponent,
@@ -29,6 +36,8 @@ import { FormComponent } from './form/form.component';
     NavbarComponent,
     AboutmeComponent,
     FormComponent,
+    NavbarAdminComponent,
+    PanelAdminComponent,
   ]
 })
 export class SectionsModule { }

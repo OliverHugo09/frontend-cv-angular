@@ -8,16 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionsModule } from './sections/sections.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     SectionsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

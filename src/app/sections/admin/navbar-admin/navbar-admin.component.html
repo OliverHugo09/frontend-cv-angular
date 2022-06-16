@@ -1,0 +1,40 @@
+<div class="container">
+    <header>
+        <!-- Main Navbar -->
+        <nav class="uk-container uk-navbar">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a [routerLink]="['/admin']">OliverLucero<strong>CV</strong></a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a class="uk-text-large" [routerLink]="['/admin']">Inicio</a></li>
+                    <li><a class="uk-text-large" [routerLink]="['/admin/about-me']">Acerca de mi</a></li>
+                    <li><a class="uk-text-large" [routerLink]="['/admin/freetime']">Pasatiempos</a></li>
+                    <li><a class="uk-text-large" [routerLink]="['/admin/skills']">Habilidades</a></li>
+                    <li><a class="uk-text-large" [routerLink]="['/admin/experience']">Experiencia</a></li>
+                    <li><a class="uk-text-large" [routerLink]="['/admin/contact']">Contacto</a></li>
+                </ul>
+                <a href="#" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+                <li><a class="uk-text-large" [routerLink]="['/admin']">Inicio</a></li>
+                <li><a class="uk-text-large" [routerLink]="['/admin/about-me']">Acerca de mi</a></li>
+                <li><a class="uk-text-large" [routerLink]="['/admin/freetime']">Pasatiempos</a></li>
+                <li><a class="uk-text-large" [routerLink]="['/admin/skills']">Habilidades</a></li>
+                <li><a class="uk-text-large" [routerLink]="['/admin/experience']">Experiencia</a></li>
+                <li><a class="uk-text-large" [routerLink]="['/admin/contact']">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

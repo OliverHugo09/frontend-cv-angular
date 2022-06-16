@@ -1,0 +1,9 @@
+table > tbody > tr > td a{
+    font-weight: 600;
+    color:white !important;
+}
+
+table > thead > tr > th{
+    color:white !important;
+    font-weight: 500;
+}
