@@ -123,3 +123,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: "RobotoCondensedRegular", "Helvetica Neue", sans-serif;  }
+
+.background-color-admin{
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.background-color-body-admin{
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.uk-modal-dialog{
+    background-color: var( --footer);
+}
+
+
+table > thead > tr > th{
+    color:white !important;
+    font-weight: 500;
+}
+
+table > tbody > .ligter > td {
+    font-weight:lighter;
+    color:white !important;
+}

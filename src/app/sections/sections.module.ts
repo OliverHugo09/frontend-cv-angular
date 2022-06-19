@@ -10,6 +10,11 @@ import { FormComponent } from './home/form/form.component';
 import { NavbarAdminComponent } from './admin/navbar-admin/navbar-admin.component';
 import { RouterModule } from '@angular/router';
 import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
+import { ListAboutmeComponent } from './admin/list-aboutme/list-aboutme.component';
+import { ListFreetimeComponent } from './admin/list-freetime/list-freetime.component';
+import { ListSkillComponent } from './admin/list-skill/list-skill.component';
+import { ListExperienceComponent } from './admin/list-experience/list-experience.component';
+import { ListContactComponent } from './admin/list-contact/list-contact.component';
 
 
 @NgModule({
@@ -23,6 +28,11 @@ import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
     FormComponent,
     NavbarAdminComponent,
     PanelAdminComponent,
+    ListAboutmeComponent,
+    ListFreetimeComponent,
+    ListSkillComponent,
+    ListExperienceComponent,
+    ListContactComponent,
   ],
   imports: [
     CommonModule,

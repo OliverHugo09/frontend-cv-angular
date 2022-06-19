@@ -1,8 +1,6 @@
-
 <div  class="uk-position-relative">
     <div class="uk-section-default">
-        <div uk-height-viewport class=" uk-background-cover" style="background-image: url(assets/img/wallpaper/wallpaper3.png)">
- 
+        <div uk-height-viewport="offset-top: true" class=" uk-background-cover" style="background-image: url(assets/img/wallpaper/wallpaper3.png)">
                 <div class="uk-sticky" uk-sticky=" cls-active: uk-navbar-sticky uk-navbar-transparent;">
                     <nav>
                         <input type="checkbox" id="check">
@@ -10,16 +8,16 @@
                           <img src="assets/img/icons/menu.png" width="50" height="50" alt="">
                         </label>
                         <ul>
-                            <li><a href="#about">Acerca de mi</a></li>
-                            <li><a href="#freetime">Pasatiempos</a></li>
-                            <li><a href="#skills">Habilidades</a></li>
-                            <li><a href="#experience">Experiencia</a></li>
-                            <li><a href="#contact">Contacto</a></li>
+                            <li (click)="toAbout()"><a>Acerca de mi</a></li>
+                            <li (click)="toFreetime()"><a>Pasatiempos</a></li>
+                            <li (click)="toSkills()"><a>Habilidades</a></li>
+                            <li (click)="toExperience()"><a>Experiencia</a></li>
+                            <li (click)="toContact()"><a>Contacto</a></li>
                         </ul>
                       </nav>
                 </div>
             <div uk-height-match class="uk-container uk-text-center uk-margin-large-top">
-                <img class="uk-border-circle" src="assets/img/wallpaper/wallpaper2.jpg" width="30%" height="30%" alt="">
+                <img class="uk-border-circle" src="assets/img/wallpaper/wallpaper2.jpg" width="400" height="400" alt="">
                 <h1 class="uk-margin-medium-top uk-text-large">Oliver Hugo Lucero Silván</h1>
                 <h3 class="uk-margin-medium-top uk-text-large">Desarrollador web</h3>
                 <div class="uk-grid-match uk-child-width-1-1@m uk-margin-medium-top" uk-grid>
@@ -31,3 +29,4 @@
         </div>
     </div>
 </div>
+<div id="about"></div>
