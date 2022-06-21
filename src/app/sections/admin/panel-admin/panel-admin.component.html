@@ -19,7 +19,7 @@
                                 <td class="uk-text-nowrap">
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['admin','list-about-me']" uk-icon="file-edit"></button>
+                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-about-me']" uk-icon="file-edit"></button>
                                 </td>
                             </tr>
                             <tr>
@@ -27,10 +27,18 @@
                                     Pasatiempos
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button>
+                                    <a class="" href="#modal-freetime" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>                       
+                                    <div id="modal-freetime" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body">
+                                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                                            <p class="uk-text-right">
+                                                <app-add-freetime></app-add-freetime>
+                                            </p>
+                                        </div>
+                                    </div> 
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['admin','list-freetime']" uk-icon="file-edit"></button>
+                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-freetime']" uk-icon="file-edit"></button>
                                 </td>
                             </tr>
                             <tr>
@@ -38,10 +46,18 @@
                                     Habilidades
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button>
+                                    <a class="" href="#modal-skill" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>                       
+                                    <div id="modal-skill" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body">
+                                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                                            <p class="uk-text-right">
+                                                <app-add-skill></app-add-skill>
+                                            </p>
+                                        </div>
+                                    </div> 
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['admin','list-skills']" uk-icon="file-edit"></button>
+                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-skills']" uk-icon="file-edit"></button>
                                 </td>
                             </tr>
                             <tr>
@@ -49,10 +65,18 @@
                                     Experiencia
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button>
+                                    <a class="" href="#modal-experience" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>                       
+                                    <div id="modal-experience" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body">
+                                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                                            <p class="uk-text-right">
+                                                <app-add-experience></app-add-experience>
+                                            </p>
+                                        </div>
+                                    </div> 
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['admin','list-experience']" uk-icon="file-edit"></button>
+                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-experience']" uk-icon="file-edit"></button>
                                 </td>
                             </tr>
                             <tr>
@@ -62,7 +86,7 @@
                                 <td class="uk-text-nowrap">
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['admin','list-contact']" uk-icon="file-edit"></button>
+                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-contact']" uk-icon="file-edit"></button>
                                 </td>
                             </tr>
                         </tbody>

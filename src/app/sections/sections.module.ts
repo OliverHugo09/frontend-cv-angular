@@ -15,6 +15,9 @@ import { ListFreetimeComponent } from './admin/list-freetime/list-freetime.compo
 import { ListSkillComponent } from './admin/list-skill/list-skill.component';
 import { ListExperienceComponent } from './admin/list-experience/list-experience.component';
 import { ListContactComponent } from './admin/list-contact/list-contact.component';
+import { AddFreetimeComponent } from './admin/add-freetime/add-freetime.component';
+import { AddSkillComponent } from './admin/add-skill/add-skill.component';
+import { AddExperienceComponent } from './admin/add-experience/add-experience.component';
 
 
 @NgModule({
@@ -33,6 +36,9 @@ import { ListContactComponent } from './admin/list-contact/list-contact.componen
     ListSkillComponent,
     ListExperienceComponent,
     ListContactComponent,
+    AddFreetimeComponent,
+    AddSkillComponent,
+    AddExperienceComponent,
   ],
   imports: [
     CommonModule,
