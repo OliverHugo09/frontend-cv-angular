@@ -21,34 +21,26 @@
 
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody *ngFor="let skill of skills">
                                     <tr class="ligter">
                                         <td>
-                                            <img class="uk-preserve-width" src="../../../../assets/img/icons/photoshop.png" width="60" height="60" alt="">
+                                            <img class="uk-preserve-width" src="{{skill.urlimg}}" width="60" height="60" alt="">
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            Photoshop
+                                            {{skill.title}}
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            50
+                                            {{skill.percentage}}
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            6 meses
+                                            {{skill.experiencetime}}
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil"></button>
-                                            <a class="" href="#modal" uk-toggle><button class="uk-margin-small-left uk-button uk-preserve-width uk-button-danger" uk-icon="trash"></button></a>                       
-                                            <div id="modal" uk-modal>
-                                                <div class="uk-modal-dialog uk-modal-body">
-                                                    <button class="uk-modal-close-default" type="button" uk-close></button>
-                                                    <h2 class="uk-modal-title">Headline</h2>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p class="uk-text-right">
-                                                        <button class="uk-button uk-modal-close uk-button-secondary" type="button">Cancelar</button>
-                                                        <button class="uk-button uk-button-danger" type="button">Borrar</button>
-                                                    </p>
-                                                </div>
-                                            </div> 
+                                                <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/skill/', skill.id]">
+                                                </button>              
+                                                <button class="uk-margin-small-left uk-button uk-preserve-width uk-button-danger" uk-icon="trash" (click)="deleteSkill(skill.id)">
+                                                </button>
+                
                                         </td>
                                     </tr>
                                 </tbody>

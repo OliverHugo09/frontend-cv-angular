@@ -18,7 +18,8 @@ import { ListContactComponent } from './admin/list-contact/list-contact.componen
 import { AddFreetimeComponent } from './admin/add-freetime/add-freetime.component';
 import { AddSkillComponent } from './admin/add-skill/add-skill.component';
 import { AddExperienceComponent } from './admin/add-experience/add-experience.component';
-
+import { FormsModule } from '@angular/forms';
+import { EditSkillComponent } from './admin/edit-skill/edit-skill.component';
 
 @NgModule({
   declarations: [
@@ -39,10 +40,12 @@ import { AddExperienceComponent } from './admin/add-experience/add-experience.co
     AddFreetimeComponent,
     AddSkillComponent,
     AddExperienceComponent,
+    EditSkillComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
   ],
   exports: [
     FooterComponent,

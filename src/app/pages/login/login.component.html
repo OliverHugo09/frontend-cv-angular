@@ -3,22 +3,24 @@
         <div uk-height-viewport="offset-top: true" class="uk-section">
             <div class="login-box">
                 <h2>Login</h2>
-                <form>
+                <!-- <form [formGroup]="formLogin" (ngSubmit)="Login()"> -->
+                  <form >
                   <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input type="text" name="username" required [(ngModel)]="user.username">
                     <label>Username</label>
                   </div>
                   <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password" required [(ngModel)]="user.password">
                     <label>Password</label>
                   </div>
-                  <a [routerLink]="['/admin']">
+                  <!-- <button [disabled]="!formLogin.valid" type="submit"> -->
+                    <button type="submit" (click)="login()">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Submit
-                  </a>
+                    Iniciar Sesión
+                  </button>
                 </form>
             </div>
         </div>

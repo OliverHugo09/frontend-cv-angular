@@ -9,7 +9,6 @@ export class NavbarAdminComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
