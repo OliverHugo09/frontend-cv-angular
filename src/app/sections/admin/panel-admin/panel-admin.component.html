@@ -27,15 +27,7 @@
                                     Pasatiempos
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <a class="" href="#modal-freetime" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>                       
-                                    <div id="modal-freetime" uk-modal>
-                                        <div class="uk-modal-dialog uk-modal-body">
-                                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                                            <p class="uk-text-right">
-                                                <app-add-freetime></app-add-freetime>
-                                            </p>
-                                        </div>
-                                    </div> 
+                                    <a class="" [routerLink]="['/admin','freetime','-1']" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>
                                 </td>
                                 <td class="uk-text-nowrap">
                                     <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-freetime']" uk-icon="file-edit"></button>
@@ -46,14 +38,7 @@
                                     Habilidades
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <a class="" [routerLink]="['/admin','skill','-1']" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>                       
-                                    <div id="modal-skill" uk-modal>
-                                        <div class="uk-modal-dialog uk-modal-body">
-                                            <button class="uk-modal-close-default" type="button" uk-close ></button>
-                                            <p class="uk-text-right">
-                                            </p>
-                                        </div>
-                                    </div> 
+                                    <a class="" [routerLink]="['/admin','skill','-1']" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>
                                 </td>
                                 <td class="uk-text-nowrap">
                                     <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-skills']" uk-icon="file-edit"></button>
@@ -64,18 +49,21 @@
                                     Experiencia
                                 </td>
                                 <td class="uk-text-nowrap">
-                                    <a class="" href="#modal-experience" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>                       
-                                    <div id="modal-experience" uk-modal>
-                                        <div class="uk-modal-dialog uk-modal-body">
-                                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                                            <p class="uk-text-right">
-                                                <app-add-experience></app-add-experience>
-                                            </p>
-                                        </div>
-                                    </div> 
+                                    <a class="" [routerLink]="['/admin','experience','-1']" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>
                                 </td>
                                 <td class="uk-text-nowrap">
                                     <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-experience']" uk-icon="file-edit"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="uk-table-link">
+                                    Redes Sociales
+                                </td>
+                                <td class="uk-text-nowrap">
+                                    <a class="" [routerLink]="['/admin','media','-1']" uk-toggle><button class="uk-button uk-preserve-width uk-button-primary" uk-icon="plus-circle"></button></a>
+                                </td>
+                                <td class="uk-text-nowrap">
+                                    <button class="uk-button uk-preserve-width uk-button-secondary" [routerLink]="['/admin','list-media']" uk-icon="file-edit"></button>
                                 </td>
                             </tr>
                             <tr>

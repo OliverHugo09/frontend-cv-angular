@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 import { FooterComponent } from './home/footer/footer.component';
 import { FreetimeComponent } from './home/freetime/freetime.component';
 import { SkillComponent } from './home/skill/skill.component';
@@ -8,7 +11,6 @@ import { NavbarComponent } from './home/navbar/navbar.component';
 import { AboutmeComponent } from './home/aboutme/aboutme.component';
 import { FormComponent } from './home/form/form.component';
 import { NavbarAdminComponent } from './admin/navbar-admin/navbar-admin.component';
-import { RouterModule } from '@angular/router';
 import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
 import { ListAboutmeComponent } from './admin/list-aboutme/list-aboutme.component';
 import { ListFreetimeComponent } from './admin/list-freetime/list-freetime.component';
@@ -18,8 +20,9 @@ import { ListContactComponent } from './admin/list-contact/list-contact.componen
 import { AddFreetimeComponent } from './admin/add-freetime/add-freetime.component';
 import { AddSkillComponent } from './admin/add-skill/add-skill.component';
 import { AddExperienceComponent } from './admin/add-experience/add-experience.component';
-import { FormsModule } from '@angular/forms';
-import { EditSkillComponent } from './admin/edit-skill/edit-skill.component';
+import { EditAboutmeComponent } from './admin/edit-aboutme/edit-aboutme.component';
+import { AddMediaComponent } from './admin/add-media/add-media.component';
+import { ListMediaComponent } from './admin/list-media/list-media.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { EditSkillComponent } from './admin/edit-skill/edit-skill.component';
     AddFreetimeComponent,
     AddSkillComponent,
     AddExperienceComponent,
-    EditSkillComponent,
+    EditAboutmeComponent,
+    AddMediaComponent,
+    ListMediaComponent,
   ],
   imports: [
     CommonModule,

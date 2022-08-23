@@ -1,16 +1,14 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit} from '@angular/core';
-import { Skill } from 'src/app/models/admin/skill';
-import { SkillService } from 'src/app/service/admin/skill.service';
+import { Component, OnInit, OnDestroy} from '@angular/core';
+import { Skill } from '../../../models/admin/skill';
+import { SkillService } from '../../../service/admin/skill.service';
 import { Subscription } from 'rxjs';
-
 
 @Component({
   selector: 'app-list-skill',
   templateUrl: './list-skill.component.html',
   styleUrls: ['./list-skill.component.css']
 })
-export class ListSkillComponent implements OnInit{
+export class ListSkillComponent implements OnInit, OnDestroy{
 
   private subscriptions: Array<Subscription> = [];
   skills: Skill[];

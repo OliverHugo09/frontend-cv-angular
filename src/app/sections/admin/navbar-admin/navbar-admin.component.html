@@ -17,7 +17,7 @@
                     <li><a class="uk-text-large" [routerLink]="['/admin/list-skills']">Habilidades</a></li>
                     <li><a class="uk-text-large" [routerLink]="['/admin/list-experience']">Experiencia</a></li>
                     <li><a class="uk-text-large" [routerLink]="['/admin/list-contact']">Contacto</a></li>
-                    <li><a class="uk-text-large" [routerLink]="['/login']">Logout</a></li>
+                    <li><a class="uk-text-large" [routerLink]="['/login']" (click)="logout()">Logout</a></li>
                 </ul>
                 <a href="#" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
             </div>
@@ -33,6 +33,7 @@
                 <li><a class="uk-text-large" [routerLink]="['/admin/list-skills']">Habilidades</a></li>
                 <li><a class="uk-text-large" [routerLink]="['/admin/list-experience']">Experiencia</a></li>
                 <li><a class="uk-text-large" [routerLink]="['/admin/list-contact']">Contacto</a></li>
+                <li><a class="uk-text-large" [routerLink]="['/login']" (click)="logout()">Logout</a></li>
             </ul>
         </div>
     </div>

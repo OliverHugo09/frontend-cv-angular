@@ -2,14 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 
-import { AboutmeComponent } from '../../sections/home/aboutme/aboutme.component';
 import { ListAboutmeComponent } from '../../sections/admin/list-aboutme/list-aboutme.component'
 import { ListFreetimeComponent } from '../../sections/admin/list-freetime/list-freetime.component'
 import { ListSkillComponent } from '../../sections/admin/list-skill/list-skill.component';
 import { ListExperienceComponent } from '../../sections/admin/list-experience/list-experience.component';
 import { ListContactComponent } from '../../sections/admin/list-contact/list-contact.component';
 import { AddSkillComponent } from '../../sections/admin/add-skill/add-skill.component';
-import { EditSkillComponent } from 'src/app/sections/admin/edit-skill/edit-skill.component';
+import { AddExperienceComponent } from '../../sections/admin/add-experience/add-experience.component';
+import { EditAboutmeComponent } from '../../sections/admin/edit-aboutme/edit-aboutme.component';
+import { AddFreetimeComponent } from '../../sections/admin/add-freetime/add-freetime.component';
+import { ListMediaComponent } from 'src/app/sections/admin/list-media/list-media.component';
+import { AddMediaComponent } from 'src/app/sections/admin/add-media/add-media.component';
 
 const routes: Routes = [
   { path: '', component: AdminComponent },
@@ -18,7 +21,12 @@ const routes: Routes = [
   { path: 'list-skills', component: ListSkillComponent },
   { path: 'list-experience', component: ListExperienceComponent },
   { path: 'list-contact', component: ListContactComponent },
+  { path: 'list-media', component: ListMediaComponent },
   { path: 'skill/:id', component: AddSkillComponent },
+  { path: 'experience/:id', component: AddExperienceComponent },
+  { path: 'aboutme/:id', component: EditAboutmeComponent },
+  { path: 'freetime/:id', component: AddFreetimeComponent },
+  { path: 'media/:id', component: AddMediaComponent },
 ];
 
 @NgModule({

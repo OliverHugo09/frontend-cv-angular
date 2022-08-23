@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../../../models/admin/skill';
-import { SkillService } from '../../../service/admin/skill.service';
+import { Media } from '../../../models/admin/media';
+import { MediaService } from '../../../service/admin/media.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-add-skill',
-  templateUrl: './add-skill.component.html',
-  styleUrls: ['./add-skill.component.css']
+  selector: 'app-add-media',
+  templateUrl: './add-media.component.html',
+  styleUrls: ['./add-media.component.css']
 })
-export class AddSkillComponent implements OnInit {
+export class AddMediaComponent implements OnInit {
 
-  skill: Skill = new Skill();
+  media: Media = new Media();
   returnUrl = '/admin';
 
   constructor(
-    private skillService: SkillService,
+    private mediaService: MediaService,
     private route: ActivatedRoute,
     private location: Location
   ) { }
 
   ngOnInit() {
-    this.skillService.getSkills().subscribe(next => this.skill);
+    this.mediaService.getMedias().subscribe(next => this.media);
     let id = +this.route.snapshot.paramMap.get('id');
     this.createOrLoadProduct(id); 
   }
@@ -30,29 +30,29 @@ export class AddSkillComponent implements OnInit {
     if (id == -1) {
       this.initProduct();
     } else {
-      this.skillService.getSkill(id).subscribe(
-        next => this.skill = next
+      this.mediaService.getMedia(id).subscribe(
+        next => this.media = next
       )
     }
   }
 
   initProduct() {
-    this.skill =  new Skill({
+    this.media =  new Media({
       urlimg: 'https://via.placeholder.com/150x150'
     })
   }
 
 
-  addSkill() {
-    if (this.skill.id) {
-      this.skillService.updateSkill(this.skill.id,this.skill).subscribe(
-        next => this.skill = next,
+  addMedia() {
+    if (this.media.id) {
+      this.mediaService.updateMedia(this.media.id,this.media).subscribe(
+        next => this.media = next,
         () => null,
         () => this.dataSaved()
       )
     } else {
-      this.skillService.addSkill(this.skill).subscribe(
-        next => this.skill = next,
+      this.mediaService.addMedia(this.media).subscribe(
+        next => this.media = next,
         () => null,
         () => this.dataSaved()
       )
@@ -72,3 +72,4 @@ export class AddSkillComponent implements OnInit {
   }
 
 }
+

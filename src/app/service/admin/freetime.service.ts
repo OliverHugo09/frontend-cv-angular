@@ -1,9 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill } from '../../models/admin/skill';
+import { Freetime } from '../../models/admin/freetime';
 
-const API_URL = 'http://localhost:3000/skill/';
+const API_URL = 'http://localhost:3000/freetime/';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
@@ -12,27 +12,27 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class SkillService {
+export class FreetimeService {
 
   constructor(private http: HttpClient) { }
 
-  getSkills(): Observable<Skill[]>{
-    return this.http.get<Skill[]>(API_URL);
+  getFreetimes(): Observable<Freetime[]>{
+    return this.http.get<Freetime[]>(API_URL);
   }
 
-  getSkill(id:number): Observable<Skill>{
-    return this.http.get<Skill>(`${API_URL}${id}`)
+  getFreetime(id:number): Observable<Freetime>{
+    return this.http.get<Freetime>(`${API_URL}${id}`)
   }
 
-  addSkill(entity:Skill): Observable<any>{
+  addFreetime(entity:Freetime): Observable<any>{
     return this.http.post(API_URL, entity, httpOptions);
   }
 
-  updateSkill(id:number,entity:Skill): Observable<any>{
+  updateFreetime(id:number,entity:Freetime): Observable<any>{
     return this.http.put(`${API_URL}${id}`, entity, httpOptions);
   }
 
-  deleteSkill(id:number){
+  deleteFreetime(id:number){
     return this.http.delete(`${API_URL}${id}`, httpOptions);
   }
 }

@@ -1,9 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill } from '../../models/admin/skill';
+import { Media } from '../../models/admin/media';
 
-const API_URL = 'http://localhost:3000/skill/';
+const API_URL = 'http://localhost:3000/media/';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
@@ -12,27 +12,27 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class SkillService {
+export class MediaService {
 
   constructor(private http: HttpClient) { }
 
-  getSkills(): Observable<Skill[]>{
-    return this.http.get<Skill[]>(API_URL);
+  getMedias(): Observable<Media[]>{
+    return this.http.get<Media[]>(API_URL);
   }
 
-  getSkill(id:number): Observable<Skill>{
-    return this.http.get<Skill>(`${API_URL}${id}`)
+  getMedia(id:number): Observable<Media>{
+    return this.http.get<Media>(`${API_URL}${id}`)
   }
 
-  addSkill(entity:Skill): Observable<any>{
+  addMedia(entity:Media): Observable<any>{
     return this.http.post(API_URL, entity, httpOptions);
   }
 
-  updateSkill(id:number,entity:Skill): Observable<any>{
+  updateMedia(id:number,entity:Media): Observable<any>{
     return this.http.put(`${API_URL}${id}`, entity, httpOptions);
   }
 
-  deleteSkill(id:number){
+  deleteMedia(id:number){
     return this.http.delete(`${API_URL}${id}`, httpOptions);
   }
 }

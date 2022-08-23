@@ -14,30 +14,27 @@
                                 <thead>
                                     <tr>
                                         <th class="uk-table-shrink">Imagen</th>
-                                        <th class="uk-table-shrink uk-text-nowrap">Habilidad</th>
-                                        <th class="uk-table-shrink uk-text-nowrap">Porcentaje</th>
-                                        <th class="uk-table-shrink uk-text-nowrap">Experiencia</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">Red Social</th>
+                                        <th class="uk-table-shrink uk-text-nowrap">URL</th>
                                         <th class="uk-table-shrink uk-text-nowrap"></th>
+
                                     </tr>
                                 </thead>
-                                <tbody *ngFor="let skill of skills">
+                                <tbody *ngFor="let media of medias">
                                     <tr class="ligter">
                                         <td>
-                                            <img class="uk-preserve-width" src="{{skill.urlimg}}" width="60" height="60" alt="">
+                                            <img class="uk-preserve-width" src="{{media.urlimg}}" width="60" height="60" alt="">
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            {{skill.title}}
+                                            {{media.name}}
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            {{skill.percentage}}
+                                            {{media.urlsite}}
                                         </td>
                                         <td class="uk-text-nowrap">
-                                            {{skill.experiencetime}}
-                                        </td>
-                                        <td class="uk-text-nowrap">
-                                                <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/skill/', skill.id]">
+                                                <button class="uk-button uk-preserve-width uk-button-secondary" uk-icon="pencil" [routerLink]="[ '/admin/media/', media.id]">
                                                 </button>              
-                                                <button class="uk-margin-small-left uk-button uk-preserve-width uk-button-danger" uk-icon="trash" (click)="deleteSkill(skill.id)">
+                                                <button class="uk-margin-small-left uk-button uk-preserve-width uk-button-danger" uk-icon="trash" (click)="deleteMedia(media.id)">
                                                 </button>
                                         </td>
                                     </tr>
@@ -49,3 +46,4 @@
         </div>
     </div>
 </div>
+
