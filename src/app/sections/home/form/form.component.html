@@ -4,8 +4,8 @@
         <h3 class="uk-margin-large-bottom">Contactame</h3>
 
         <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
-            <div class="container">
-                <p class="uk-margin-medium-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="container" *ngFor="let contact of contacts">
+                <p class="uk-margin-medium-bottom">{{contact.descripcion}}</p>
                 <form class="uk-grid-small" uk-grid>
                     <div class="uk-width-1-2@s">
                         <input class="uk-input" type="name" placeholder="Nombre">

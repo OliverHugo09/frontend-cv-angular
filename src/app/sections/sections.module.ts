@@ -23,6 +23,7 @@ import { AddExperienceComponent } from './admin/add-experience/add-experience.co
 import { EditAboutmeComponent } from './admin/edit-aboutme/edit-aboutme.component';
 import { AddMediaComponent } from './admin/add-media/add-media.component';
 import { ListMediaComponent } from './admin/list-media/list-media.component';
+import { ListMainComponent } from './admin/list-main/list-main.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ListMediaComponent } from './admin/list-media/list-media.component';
     EditAboutmeComponent,
     AddMediaComponent,
     ListMediaComponent,
+    ListMainComponent,
   ],
   imports: [
     CommonModule,
